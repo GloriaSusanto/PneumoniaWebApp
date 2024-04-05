@@ -1,0 +1,1029 @@
+*{
+    font-family: Georgia;
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+.navbar{
+    height: 70px;
+}
+
+.navbar-brand{
+    color: #013A63;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.jumbotron-fluid{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(245,239,239,1) 18%, rgba(189,224,243,1) 33%, rgba(252,213,206,1) 79%);
+    background-size: cover;
+    height: 523px;
+    margin-top: -70px;
+}
+
+.container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.span1{
+    color: #EB4768;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.display-4{
+    color: #EB4768;
+    font-family: 'Viga', sans-serif;
+    margin-top: -400px;
+}
+
+.sub-header{
+    color: #62B6CB;
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+}
+
+.sub-header2{
+    color: #013A63;
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+}
+
+.sub-header3{
+    color: #013A63;
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.sub-header4{
+    color: #013A63;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.h1{
+    font-family: 'Viga', sans-serif;
+    font-size: 40px;
+    color: #EB4768;
+    margin-bottom: 40px;
+    text-decoration: solid underline #FADDE1 6px;
+}
+
+.span2{
+    color: #274C77;
+    font-family: 'Viga', sans-serif;   
+}
+
+.list{
+    color: #62B6CB;
+    font-family: 'Viga', sans-serif;
+    font-size: 18px;
+}
+
+.img-fluid{
+    height: 250px;
+    margin-top: -350px;
+    margin-left: 780px;
+    width: 300px;
+}
+
+.img-fluid-1{
+    flex-direction: center;
+    width: 400px;
+}
+
+.figure-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #EB4768; /* Menambahkan bayangan */
+}
+
+
+.figure-caption{
+    font-family: 'Viga', sans-serif;
+    color: #EB4768;
+    margin-bottom: 20px;
+}
+
+.hero-list{
+    display: grid;
+    grid-template-rows: auto;
+}
+/* icon */
+.icon-1{
+    height: 20px;
+}
+
+.list{
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.description {
+    margin-top: 50px;
+    padding: 10px; /* Menambahkan padding untuk memberi ruang di sekitar deskripsi */
+    background-color: #ffffff; /* Warna latar belakang deskripsi */
+    border: 1px solid #EB4768; /* Garis pinggir deskripsi */
+    border-radius: 5px; /* Membuat sudut border menjadi sedikit melengkung */
+    margin-bottom: 30px;
+    border-width: 5px;
+}
+
+.description h5 {
+    margin-top: 0; /* Menghapus margin atas untuk judul */
+    font-size: 18px; /* Ukuran font judul */
+    color: #013A63;
+    font-family: 'Viga', sans-serif;
+}
+
+.description p {
+    margin-bottom: 0; /* Menghapus margin bawah untuk paragraf */
+    margin-top: 10%;
+    font-size: 16px; /* Ukuran font paragraf */
+    color: #013A63;
+    font-family:'Josefin Sans', sans-serif ;
+}
+
+
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #013A63;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    font-family: 'Viga', sans-serif;
+  }
+
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #62B6CB;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #00848A;
+  }
+
+.btn{
+    flex-direction: center;
+    border-radius: 25px;
+    background-color: #ffff;
+    border-color: #4A4E69;
+    border-width: 4px;
+}
+
+.btn-unggah{
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover{
+    background: #00848A;
+    border-color: #00848A;
+    cursor: pointer;
+}
+
+input[value]{
+    font-family: 'Viga', sans-serif;
+    color: #EB4768;
+}
+
+.hasil{
+    font-family: 'Viga', sans-serif;
+    color: #EB4768;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.footer{
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(0deg, rgba(252,213,206,1) 10%, rgba(189,224,243,1) 40%, rgba(245,239,239,1) 70%, rgba(255,255,255,1) 75%);
+    font-family: 'Viga, sans-serif';
+    color: #111010;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between; /* Mengatur agar span3 berada di sisi kiri dan span4 berada di sisi kanan */
+    align-items: center;
+    gap: 0.2rem;
+    height: 20px;
+}
+
+.span3 {
+    color: #111010;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.span4 {
+    color: #111010;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.name {
+    color: #111010;
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    width: 180px; /* Mengatur lebar maksimum untuk nama */
+    font-weight: bold;
+}
+
+.position {
+    color: #111010;
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    width: 280px; /* Mengatur lebar maksimum untuk posisi */
+    font-weight: bold;
+}
+
+
+/* DESKTOP VERSION */
+@media screen and (max-width: 1189px) { 
+    /* Jumbotron */
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 50px;
+    }
+
+    .img-fluid{
+        margin-left: 680px;
+    }
+
+    .sub-header{
+        font-size: 20px;
+    }
+    
+
+    .span2{
+        font-size: 25px;
+    }
+
+    .h1{
+        font-size: 50px;
+    }
+
+    .btn-unggah{
+        display: flex;
+        
+    }
+}
+
+@media screen and (max-width: 992px){
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 35px;
+    }
+
+    .sub-header{
+        font-size: 25px;
+    }
+
+    .sub-header2{
+        font-size: 25px;
+    }
+
+    .sub-header4{
+        font-size: 20px;
+        margin-top: 80px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 150px;
+    }
+
+    .description h5{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 90px;
+        width: 90px;
+    }
+
+    .span2{
+        font-size: 25px;
+    }
+
+    .span3{
+        font-size: 10px;
+    }
+
+    .span4{
+        margin-top: 15px;
+    }
+
+    .span5{
+        font-size: 8px;
+    }
+
+    .name{
+        font-size: 10px;
+    }
+
+    .position{
+        font-size: 10px;
+    }
+
+    .img-fluid{
+        margin-left: 600px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .h1{
+        font-size: 35px;
+    }
+
+
+    .list{
+        font-size: 20px;
+    }
+
+    .hasil{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .navbar-brand{
+        font-size: 18px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 20px;
+    }
+
+    .sub-header{
+        font-size: 15px;
+    }
+
+    .sub-header2{
+        font-size: 15px;
+    }
+
+    .sub-header3{
+        font-size: 20px;
+    }
+
+    .sub-header4{
+        font-size: 15px;
+        margin-top: 80px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 250px;
+    }
+
+    .description h5{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 90px;
+        width: 90px;
+    }
+
+    .span2{
+        font-size: 15px;
+    }
+
+    .span3{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .span5{
+        font-size: 8px;
+    }
+
+    .name{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .position{
+        font-size: 10px;
+        width: 160px;
+        margin-right: -30px;
+    }
+
+
+    .img-fluid{
+        margin-left: 390px;
+        width: 150px;
+        height: 130px;
+        margin-top: -25dvh;
+    }
+
+    .h1{
+        font-size: 25px;
+    }
+
+
+    .list{
+        font-size: 15px;
+    }
+
+    .hasil{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .navbar-brand{
+        font-size: 18px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 20px;
+    }
+
+    .sub-header{
+        font-size: 15px;
+    }
+
+    .sub-header2{
+        font-size: 15px;
+    }
+
+    .sub-header3{
+        font-size: 20px;
+    }
+
+    .sub-header4{
+        font-size: 15px;
+        margin-top: 60px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 250px;
+    }
+
+    .description h5{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 90px;
+        width: 90px;
+    }
+
+    .span2{
+        font-size: 15px;
+    }
+
+    .span3{
+        font-size: 8px;
+        margin-left: -20px;
+    }
+
+    .span5{
+        font-size: 6px;
+    }
+
+    .name{
+        font-size: 8px;
+        width: 200px;
+    }
+
+    .position{
+        font-size: 8px;
+        width: 160px;
+        margin-right: -30px;
+    }
+
+    .img-fluid{
+        margin-left: 250px;
+        margin-top: -28dvh;
+        width: 95px;
+        height: 85px;
+    }
+
+    .img-fluid{
+        margin-top: -15dvh;
+        margin-left: 390px;
+        width: 150px;
+        height: 130px;
+    }
+
+    .h1{
+        font-size: 25px;
+    }
+
+
+    .list{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    .navbar-brand{
+        font-size: 18px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+        height: 400px;
+    }
+
+    .display-4{
+        font-size: 18px;
+        margin-top: -280px;
+    }
+
+    .sub-header{
+        font-size: 10px;
+    }
+
+    .sub-header2{
+        font-size: 12px;
+    }
+
+    .sub-header3{
+        font-size: 18px;
+    }
+
+    .sub-header4{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 155px;
+    }
+
+    .description h5{
+        font-size: 10px;
+    }
+
+    .description p{
+        font-size: 9px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .span2{
+        font-size: 10px;
+    }
+
+    .span3{
+        font-size: 6px;
+        margin-left: -30px;
+    }
+
+    .span5{
+        font-size: 2px;
+    }
+
+    .name{
+        font-size: 5px;
+        width: 100px;
+    }
+
+    .position{
+        font-size: 5px;
+        width: 90px;
+        margin-right: -30px;
+    }
+
+    .img-fluid{
+        margin-left: 250px;
+        margin-top: -28dvh;
+        width: 95px;
+        height: 85px;
+    }
+
+    .img-fluid-1{
+        width: 250px;
+    }
+
+    .h1{
+        font-size: 18px;
+    }
+
+    .list{
+        font-size: 10px;
+    }
+
+    .hasil{
+        font-size: 14px;
+    }
+
+   input[type=file]{
+    font-size: 10px;
+    max-width: 70%;
+   }
+
+   input[value]{
+    font-size: 14px;
+   }
+
+   .btn{
+    font-size: 10px;
+    margin-right: 100px;
+    }
+
+    .btn-unggah{
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+    .navbar-brand{
+        font-size: 18px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+        height: 400px;
+        width: 414px;
+    }
+
+    .display-4{
+        font-size: 18px;
+        margin-top: -280px;
+    }
+
+    .sub-header{
+        font-size: 10px;
+    }
+
+    .sub-header2{
+        font-size: 12px;
+    }
+
+    .sub-header3{
+        font-size: 18px;
+    }
+
+    .sub-header4{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 155px;
+    }
+
+    .description h5{
+        font-size: 10px;
+    }
+
+    .description p{
+        font-size: 9px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .span2{
+        font-size: 10px;
+    }
+
+    .span3{
+        font-size: 6px;
+        margin-left: -30px;
+    }
+
+    .span5{
+        font-size: 2px;
+    }
+
+    .name{
+        font-size: 5px;
+        width: 100px;
+    }
+
+    .position{
+        font-size: 5px;
+        width: 90px;
+        margin-right: -30px;
+    }
+
+    .img-fluid{
+        margin-left: 300px;
+        margin-top: -18dvh;
+        width: 95px;
+        height: 85px;
+    }
+
+    .img-fluid-1{
+        width: 250px;
+    }
+
+    .h1{
+        font-size: 18px;
+    }
+
+    .list{
+        font-size: 10px;
+    }
+
+    .hasil{
+        font-size: 14px;
+    }
+
+   input[type=file]{
+    font-size: 10px;
+    max-width: 70%;
+   }
+
+   input[value]{
+    font-size: 14px;
+   }
+
+   .btn{
+    font-size: 10px;
+    margin-right: 100px;
+    }
+
+    .btn-unggah{
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 412px){
+    .navbar-brand{
+        font-size: 12px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 12px;
+    }
+
+    .sub-header{
+        font-size: 10px;
+    }
+
+    .sub-header2{
+        font-size: 10px;
+    }
+
+    .sub-header3{
+        font-size: 20px;
+    }
+
+    .sub-header4{
+        font-size: 15px;
+        margin-top: 80px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 250px;
+    }
+
+    .description h5{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 90px;
+        width: 90px;
+    }
+
+    .span2{
+        font-size: 15px;
+    }
+
+    .span3{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .span5{
+        font-size: 8px;
+    }
+
+    .name{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .position{
+        font-size: 10px;
+        width: 160px;
+        margin-right: -30px;
+    }
+
+
+    .img-fluid{
+        margin-left: 60px;
+        width: 80px;
+        height: 100px;
+        margin-top: -25dvh;
+    }
+
+    .h1{
+        font-size: 25px;
+    }
+
+
+    .list{
+        font-size: 15px;
+    }
+
+    .hasil{
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .jumbotron-fluid{
+        background-size: cover;
+    }
+
+    .display-4{
+        font-size: 25px;
+    }
+
+    .sub-header{
+        font-size: 18px;
+    }
+
+    .sub-header2{
+        font-size: 15px;
+    }
+
+    .sub-header3{
+        font-size: 20px;
+    }
+
+    .sub-header4{
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+    .description{
+        border-width: 2px;
+        position: relative;
+        height: 200px;
+    }
+
+    .description h5{
+        font-size: 18px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .figure-img{
+        position: -webkit-sticky;
+        position: sticky;
+        height: 90px;
+        width: 90px;
+    }
+
+    .span2{
+        font-size: 15px;
+    }
+
+    .span3{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    .span5{
+        font-size: 8px;
+    }
+
+    .name{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .position{
+        font-size: 10px;
+        width: 160px;
+        margin-right: -30px;
+    }
+
+
+    .img-fluid{
+        margin-left: 450px;
+        width: 250px;
+        height: 230px;
+        margin-top: -25dvh;
+    }
+
+    .h1{
+        font-size: 25px;
+    }
+
+
+    .list{
+        font-size: 15px;
+    }
+
+    .hasil{
+        font-size: 15px;
+    }
+
+}

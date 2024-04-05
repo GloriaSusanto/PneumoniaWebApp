@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNEUMONIA CLASSIFICATION</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,300;1,700&family=Viga&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-light">
+    <div class="container">
+        <span class="navbar-brand"><span class="span1">Xray</span>PneumoAI</span>
+    </div>
+</nav>
+<!-- akhir navbar-->
+
+<!-- Heading -->
+<div class="jumbotron jumbotron-fluid"></div>
+<div class="container">
+    <h1 class="display-4">Pneumonia Classification<br>With AI</h1>
+    <p class="sub-header">We use machine learning to identify <span class="span2">Pneumonia</span><br>in Chest X-Ray Images</p>
+    <img src="static/images/img-01.png" class="img-fluid" alt="">
+</div>
+<!-- akhir heading -->
+
+
+<!-- Bagian gambar -->
+<div class="container">
+    <div class="text-center"><br>
+        <p class="sub-header4">
+            Pneumonia is a common respiratory infection characterized by inflammation of the air sacs in one or both lungs. 
+            It typically presents with symptoms such as cough, fever, difficulty breathing, and chest pain. Pneumonia can lead to a decline in respiratory function, which may hinder daily activities. 
+            Although the exact cause of pneumonia can vary, it is often triggered by bacterial, viral, or fungal infections.
+            While treatments such as antibiotics or antiviral medications are available for pneumonia, they primarily aim to manage symptoms and combat the underlying infection rather than providing a definitive cure.</p>
+    </div><br><br>
+    
+ <div class="row align-items-center">
+    <div class="col text-center">
+        <img src="../static/images/person85_bacteria_423.png" class="figure-img" alt="...">
+        <div class="description">
+            <h5>Pneumonia Bacteria</h5>
+            <p>
+                Pneumonia bakteri adalah jenis pneumonia yang disebabkan oleh infeksi bakteri seperti Streptococcus pneumoniae.
+            </p>
+        </div>
+    </div>
+    <div class="col text-center">
+        <img src="../static/images/person18_virus_49.png" class="figure-img" alt="...">
+        <div class="description">
+            <h5>Pneumonia Virus</h5>
+            <p>
+                Pneumonia virus disebabkan oleh infeksi virus, seperti influenza virus atau virus pernapasan syncytial (RSV).
+            </p>
+        </div>
+    </div>
+    <div class="col text-center">
+        <img src="../static/images/IM-0084-0001.png" class="figure-img" alt="...">
+        <div class="description">
+            <h5>Normal</h5>
+            <p>
+                Gambar ini menunjukkan hasil normal dari pemeriksaan radiologi dada tanpa adanya tanda-tanda pneumonia atau infeksi lainnya.
+            </p>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+<!-- Bagian kiri -->
+<div class="container">
+    <h1 class="h1">Pneumonia Classification</h1>
+    <p class="sub-header2">How does Pneumonia Classification work?</p>
+    <div class="hero-list">
+        <img src="static/images/icon.png" class="icon-1"><p class="list">Choose chest X-ray images</p>
+        <img src="static/images/icon.png" class="icon-1"><p class="list">Upload the X-ray images</p>
+        <img src="static/images/icon.png" class="icon-1"><p class="list">The trained machine learning model will process the image</p>
+        <img src="static/images/icon.png" class="icon-1"><p class="list">Result will be shown in a few seconds</p>
+    </div>
+</div>
+
+
+<!-- Bagian Bawah -->
+<div class="predict-img">
+    <div class="text-center">
+        <h1 class="sub-header3">Result</h1>
+    </div>
+    <div class="text-center">
+        {% if label %}
+        <img src="{{ file }}" class="img-fluid-1" alt="Gambar Prediksi">
+        <br>
+        <br>
+        <p class="hasil">The uploaded image suggests the presence of <strong>{{ label }}</strong><br> 
+            with a probability of <strong>{{ accuracy }}</strong>. For more
+            information, <br>please seek advice from a medical professional.</p>
+        {% else %}
+        <img src="static/images/dummy.png" class="img-fluid-1" alt="Gambar Dummy">
+        <p class="hasil">THIS IS RESULT CLASSIFICATION</p>
+        {% endif %}
+    </div>
+
+
+    <div class="btn-unggah form-group text-center">
+        <form class="p-3 text-center" action='/', method="post", enctype="multipart/form-data">
+            <input class="form-control" type="file" name="file">
+            <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+        </form>
+    </div>
+</div>
+
+<footer class="footer"><span class="span3">&copy; 2024 Universitas Klabat<sup class="span3">TM</sup>. All Rights Reserved.</span>
+    <span class="span4">
+        <span class="name">Timothy Mulalinda</span><span class="position">Green A. Sandag, S.Kom.</span><br>
+        <span class="name">Gloria Susanto</span><span class="position">Stenly Pungus, S.Kom., M.T., Ph.D.</span></span>
+</footer>
+
+
+<!-- Akhir bagian kanan -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
